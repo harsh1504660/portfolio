@@ -29,12 +29,6 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            
-        }
-        .container h2{
-            font-size: 2.8em; /* Increased font size */
-            margin-bottom: 20px;
-            text-align: center;
         }
 
         header {
@@ -91,6 +85,7 @@
             transition: color 0.3s ease;
             padding: 15px; /* Add padding for better clickability */
         }
+        
         .menu-icon {
             display: none;
             cursor: pointer;
@@ -157,7 +152,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-           
         }
 
         .projects .project-card:hover {
@@ -181,14 +175,7 @@
 
         .projects .project-card a:hover {
             text-decoration: underline;
-
         }
-        .projects .project-card:hover {
-            transform: translateY(-5px);
-            background-color: #424749;
-            color: #fff;
-        }
-        
 
         footer {
             background-color: #1e1e1e; /* Darker footer */
@@ -200,141 +187,8 @@
             bottom: 0;
         }
 
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            .bar {
-                flex-direction: column;
-                align-items: flex-start;
-                height: auto; /* Reset height */
-                padding: 0 20px; /* Adjust padding for smaller screens */
-            }
-         
-            .header-content h1 {
-                
-                padding-top: 0.3cm;
-                justify-content: center;
-                text-align: center; /* Align h1 text to left */
-                font-size: 2em; /* Adjust font size for mobile */
-            }
-
-            .menu-icon {
-                display: block;
-                align-self: flex-end;
-                position: absolute;
-                right: 45px;
-                top: 24px;
-            }
-          
-            header nav {
-                padding-right: 0cm;
-                float: none;
-                margin-top: 20px;
-                width: 100%;
-                text-align: center; /* Centering nav items in mobile view */
-            }
-
-            header nav ul {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            header nav ul.show {
-                display: flex;
-            }
-
-            header nav ul li {
-                margin: 10px 0;
-            }
-            .tech-stack {
-                padding: 10px; /* Reduced padding */
-           
-            }
-            .tech-stack .card {
-                display: block;
-                margin: 10px auto;
-            }
-            .projects .project-card {
-                width: 150%; /* Increased width to 90% */
-                
-            }
-            .container{
-                margin-right: 3.5cm;
-                
-            }
-            .container h2{
-                padding-left: 2cm;
-            }
-        }
-
-
-
-        /* Light mode styles */
-        body.light-mode {
-            background-color: #f0f0f0; /* Light background */
-            color: #333; /* Dark text */
-        }
-
-        body.light-mode header {
-            background-color: #333; /* Darker header */
-        }
-        body.light-mode header nav ul li a:hover {
-            color: #745757;
-        }
-
-        body.light-mode header nav ul li a {
-            color: #fff;
-        }
-        body.light-mode .tech-stack .card:hover {
-            transform: translateY(-5px);
-            background-color: #424749;
-            color: #fff;
-        }
-
-        body.light-mode .tech-stack {
-            background-color: #fff; /* Lighter background */
-        }
-
-        body.light-mode .tech-stack h3 {
-            color: #333;
-        }
-
-        body.light-mode .tech-stack .card {
-            background-color: #f8f8f8; /* Lighter background for cards */
-            color: #333;
-        }
-
-        body.light-mode footer {
-            background-color: #333; /* Darker footer */
-            color: #fff;
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            header h1 {
-                margin-bottom: 10px; /* Add margin bottom for spacing */
-            }
-            header nav ul {
-                flex-direction: column;
-            }
-            header nav ul li {
-                margin: 10px 0;
-            }
-            .tech-stack {
-                padding: 10px; /* Reduced padding */
-            }
-            .tech-stack .card {
-                display: block;
-                margin: 10px auto;
-            }
-
-        }
-          /* Gallery Modal Styles */
-          .gallery-modal {
+        /* Gallery Modal Styles */
+        .gallery-modal {
             display: none;
             position: fixed;
             z-index: 9999;
@@ -396,115 +250,222 @@
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
         }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .bar {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto; /* Reset height */
+                padding: 0 20px; /* Adjust padding for smaller screens */
+            }
+
+            .header-content h1 {
+                padding-top: 0.3cm;
+                justify-content: center;
+                text-align: center; /* Align h1 text to left */
+                font-size: 2em; /* Adjust font size for mobile */
+            }
+
+            .menu-icon {
+                display: block;
+                align-self: flex-end;
+                position: absolute;
+                right: 45px;
+                top: 24px;
+            }
+
+            header nav {
+                padding-right: 0cm;
+                float: none;
+                margin-top: 20px;
+                width: 100%;
+                text-align: center; /* Centering nav items in mobile view */
+            }
+
+            header nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul.show {
+                display: flex;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            .tech-stack {
+                padding: 10px; /* Reduced padding */
+            }
+
+            .tech-stack .card {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f0f0f0; /* Light background */
+            color: #333; /* Dark text */
+        }
+
+        body.light-mode header {
+            background-color: #333; /* Darker header */
+        }
+
+        body.light-mode header nav ul li a:hover {
+            color: #745757;
+        }
+
+        body.light-mode header nav ul li a {
+            color: #fff;
+        }
+
+        body.light-mode .tech-stack .card:hover {
+            transform: translateY(-5px);
+            background-color: #424749;
+            color: #fff;
+        }
+
+        body.light-mode .tech-stack {
+            background-color: #fff; /* Lighter background */
+        }
+
+        body.light-mode .tech-stack h3 {
+            color: #333; /* Dark text */
+        }
+
+        body.light-mode .tech-stack .card {
+            background-color: #f8f8f8; /* Lighter card background */
+            color: #333; /* Dark text */
+        }
+
+        body.light-mode .projects .project-card:hover {
+            transform: translateY(-5px);
+            background-color: #57a0d3;
+            color: #fff;
+        }
+
+        body.light-mode .projects .project-card {
+            background-color: #2c2c2c; /* Darker background */
+            color: #e0e0e0; /* Light text */
+        }
+
+        body.light-mode .projects .project-card a {
+            color: #57a0d3;
+        }
+
+        body.light-mode .projects .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        body.light-mode footer {
+            background-color: #333; /* Darker footer */
+            color: #e0e0e0; /* Light text */
+        }
     </style>
 </head>
-<body class="dark-mode">
+<body>
     <header>
         <div class="bar">
             <div class="header-content">
-                <h1 style="margin-left: 10px;">Harsh Joshi</h1> <!-- Adjusted margin-left -->
-                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <h1>Harsh Joshi</h1>
             </div>
             <nav>
-                <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
+                <span class="menu-icon">&#9776;</span>
+                <ul>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Projects</a></li>
-                    <li><a href="blogs.html">Articles</a></li>
-                    <li><a href="lj.html">Learning Journey</a></li>
-                    <li><a href="certi.html">Certificates</a></li>
-                    <li><a href="social.html">Social Links</a></li>
-                    <span class="mode-toggle" onclick="toggleMode()">☀️</span>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Projects Section -->
-    <div>
-        <h2 style=" font-size: 2.5em;;margin-top: 35px;
-        text-align: center;">My Projects</h2>
-    </div>
     <section class="container">
-
+        <h2>Projects</h2>
         <div class="projects">
+            <!-- Project 1 -->
             <div class="project-card">
-                <h3>Smart Answer Evaluator</h3>
-                <p>I developed a deep learning model capable of classifying students' answers into three categories: partial correct, correct, and incorrect, by comparing them with an ideal answer. Leveraging BERT architecture as a foundation, I further customized it to accommodate manual input or image uploads for answers. The application calculates marks using probabilities obtained from the model, applying a formula I developed specifically for this purpose.
-                    Users can also select the type of checking—either hard checking or soft checking—according to their preference. This flexibility allows them to adjust how rigorously the system evaluates the results based on their specific needs or criteria.</p>
-                <p><strong>Technologies Used:</strong> Transformers, Tesnorflow, FastAPI, Flask, HTML/CSS</p>
-                <p><a href="https://smart-answer-evaluator.onrender.com/" target="_blank">View Project</a> | <a href="https://github.com/harsh1504660/Smart-Answer-Evaluator" target="_blank">View Code</a> | <a href="#" id="openGalleryBtn-1">Open Gallery</a></p>
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <p><a href="#" id="openGalleryBtn-1">Open Gallery</a></p>
             </div>
 
+            <!-- Gallery modal for Project 1 -->
             <div id="imageGallery-1" class="gallery-modal">
                 <span class="close">&times;</span>
                 <button class="prev" onclick="plusSlides(-1, 1)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1, 1)">&#10095;</button>
                 <div class="gallery-content">
-          
-                    <img src="images\sae2.PNG" alt="Image 1">
-                    <img src="images\sae3.PNG" alt="Image 2">
-                    <img src="images\sae4.PNG" alt="Image 1">
-                    <img src="images\sae1.PNG" alt="Image 2">
+                    <img src="images/project1-image1.jpg" alt="Image 1">
+                    <img src="images/project1-image2.jpg" alt="Image 2">
                     <!-- Add more images as needed for Project 1 -->
                 </div>
             </div>
 
-            
+            <!-- Project 2 -->
             <div class="project-card">
-                <h3>VLC Media Controller Using Hand Gestures</h3>
-                <p>In this project, I developed a deep learning model to classify hand gestures, enabling users to control the VLC media player seamlessly. The model recognizes gestures such as fist (pause/play), OK sign (confirm), two fingers up (volume up), palm (volume down), and other gestures as commands for actions like skipping tracks. This integration allows users to interact with VLC Media Player intuitively through hand gestures detected and classified by the deep learning model.I fine-tuned the VGG16 model using the HaGrid dataset, achieving an impressive accuracy of 96%. </p>
-                <p><strong>Technologies Used:</strong> Tensorflow, TKinter, OpenCV</p>
-                <p><a href="https://drive.google.com/file/d/10LSHdoqwn8hS7JuwRlFm74gg8RKY2n-A/view?usp=sharing" target="_blank">View Project</a> | <a href="https://github.com/harsh1504660/Gesture-Media-Controller" target="_blank">View Code</a></p>
-            </div>
-            <div class="project-card">
-                <h3>Diabetes Detector</h3>
-                <p>This is a machine learning model deployed on Streamlit, capable of predicting whether the user has diabetes. It utilizes features such as smoking history, hypertension, heart disease, glucose level, etc. Logistic regression is employed to illustrate the likelihood of diabetes with an impressive accuracy of 92%.</p>
-                <p><strong>Technologies Used:</strong> Scikit-Learn, Streamlit, Numpy</p>
-                <p><a href="https://diabetes-predictor-ankmxawcztpjgcsmlkyybw.streamlit.app/" target="_blank">View Project</a> | <a href="https://github.com/harsh1504660/Diabetes-Predictor" target="_blank">View Code</a>| <a href="#" id="openGalleryBtn-2">Open Gallery</a></p>
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <p><a href="#" id="openGalleryBtn-2">Open Gallery</a></p>
             </div>
 
+            <!-- Gallery modal for Project 2 -->
             <div id="imageGallery-2" class="gallery-modal">
                 <span class="close">&times;</span>
                 <button class="prev" onclick="plusSlides(-1, 2)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1, 2)">&#10095;</button>
                 <div class="gallery-content">
-                    <img src="images\d2.PNG" alt="Image 1">
-                    <img src="images\d1.PNG" alt="Image 2">
+                    <img src="images/project2-image1.jpg" alt="Image 1">
+                    <img src="images/project2-image2.jpg" alt="Image 2">
                     <!-- Add more images as needed for Project 2 -->
                 </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="project-card">
-                <h3>IPL Win Probablity Calculator</h3>
-                <p>In this project, I developed a machine learning model to calculate the win percentage of a cricket team based on the current game scenario. Factors considered include the target set, overs remaining, wickets fallen, etc. Logistic regression was utilized to classify whether the batting team is losing or not. Using this classification, I computed the win percentage for both teams involved in the match.</p>
-                <p><strong>Technologies Used:</strong> Tech1, Tech2, Tech3</p>
-                <p><a href="https://ipl-win-predictor-u4xgjjtwhqqwlygonwzpnt.streamlit.app/" target="_blank">View Project</a> | <a href="https://github.com/harsh1504660/IPL-Win-Predictor" target="_blank">View Code</a>| <a href="#" id="openGalleryBtn-3">Open Gallery</a></p>
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+                <p><a href="#" id="openGalleryBtn-3">Open Gallery</a></p>
             </div>
+
+            <!-- Gallery modal for Project 3 -->
             <div id="imageGallery-3" class="gallery-modal">
                 <span class="close">&times;</span>
                 <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
                 <div class="gallery-content">
-                    <img src="images\i2.PNG" alt="Image 1">
-                    <img src="images\i1.PNG" alt="Image 2">
+                    <img src="images/project3-image1.jpg" alt="Image 1">
+                    <img src="images/project3-image2.jpg" alt="Image 2">
                     <!-- Add more images as needed for Project 3 -->
                 </div>
             </div>
+
+            <!-- Project 4 -->
             <div class="project-card">
-                <h3>Laptop Price Predictor</h3>
-                <p>This deployed machine learning model calculates the price of a laptop using features such as brand, HDD size, SSD presence, RAM, and other relevant specifications. To tackle this regression problem, decision tree algorithms were employed. To improve the R2 score, feature engineering techniques like regularization were applied, resulting in an approximate R2 score of 88%.</p>
-                <p><strong>Technologies Used:</strong> Tech1, Tech2, Tech3</p>
-                <p><a href="https://laptop-price-predictor-jsbziud4ibtybumfx7mmkj.streamlit.app/" target="_blank">View Project</a> | <a href="https://github.com/harsh1504660/Laptop-price-predictor" target="_blank">View Code</a>| <a href="#" id="openGalleryBtn-4">Open Gallery</a></p>
+                <h3>Project 4</h3>
+                <p>Description of Project 4.</p>
+                <p><a href="#" id="openGalleryBtn-4">Open Gallery</a></p>
             </div>
+
+            <!-- Gallery modal for Project 4 -->
             <div id="imageGallery-4" class="gallery-modal">
                 <span class="close">&times;</span>
                 <button class="prev" onclick="plusSlides(-1, 4)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1, 4)">&#10095;</button>
                 <div class="gallery-content">
-                    <img src="images\lp2.PNG" alt="Image 1">
-                    <img src="images\lp1.PNG" alt="Image 2">
+                    <img src="images/project4-image1.jpg" alt="Image 1">
+                    <img src="images/project4-image2.jpg" alt="Image 2">
                     <!-- Add more images as needed for Project 4 -->
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -513,24 +474,8 @@
     </footer>
 
     <script>
-        function toggleMode() {
-            const body = document.body;
-            body.classList.toggle('light-mode');
-            const modeToggle = document.querySelector('.mode-toggle');
-            if (body.classList.contains('light-mode')) {
-                modeToggle.textContent = '🌙';
-            } else {
-                modeToggle.textContent = '☀️';
-            }
-        }
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('show');
-        }
-
-
-
-        function openGallery(projectId) {
+    // Function to open the gallery modal based on the project ID
+    function openGallery(projectId) {
     let modal = document.getElementById(`imageGallery-${projectId}`);
     modal.style.display = 'block';
     showSlides(0, projectId); // Display the first slide when modal opens

@@ -105,47 +105,45 @@
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-
-        .articles .article-card {
-            background-color: #2c2c2c; /* Slightly lighter background for cards */
-            color: #e0e0e0;
+    
+  .article-card {
+    background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            margin: 20px;
             padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 400px;
             text-align: center;
+            transition: transform 0.3s ease;
         }
-
-        .articles .article-card img {
+        .articles{
+            padding: 40px 0;
+            flex: 1;
+        }
+         .article-card img {
             width: 100%;
-            max-width: 400px;
-            height: auto;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .articles .article-card h3 {
+        .article-card h3 {
             margin-bottom: 10px;
         }
 
-        .articles .article-card p {
+       .article-card p {
             margin-bottom: 10px;
         }
 
-        .articles .article-card a {
+     .article-card a {
             color: #57a0d3;
             text-decoration: none;
         }
 
-        .articles .article-card a:hover {
+    .article-card a:hover {
             text-decoration: underline;
         }
 
-        .articles .article-card:hover {
+       .article-card:hover {
             transform: translateY(-5px);
             background-color: #424749;
             color: #fff;
@@ -249,6 +247,62 @@
    
           
         }
+        .certificates {
+            padding: 40px 0;
+            flex: 1;
+        }
+
+        .certificates h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .certificate-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .certificate {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .certificate img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .certificate:hover {
+            transform: translateY(-5px);
+            background-color: #424749;
+        }
+
+        .certificate h3 {
+            margin-bottom: 10px;
+        }
+
+        .certificate p {
+            margin-bottom: 15px;
+        }
+
+        .certificate a {
+            color: #57a0d3;
+            text-decoration: none;
+        }
+
+        .certificate a:hover {
+            text-decoration: underline;
+        }
+        
     </style>
 </head>
 <body class="dark-mode">
@@ -262,9 +316,9 @@
                 <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="project.html">Projects</a></li>
-                    <li><a href="#">Articles</a></li>
+                    <li><a href="blogs.html">Articles</a></li>
                     <li><a href="lj.html">Learning Journey</a></li>
-                    <li><a href="certi.html">Certificates</a></li>
+                    <li><a href="#">Certificates</a></li>
                     <li><a href="social.html">Social Links</a></li>
                     <span class="mode-toggle" onclick="toggleMode()">☀️</span>
                 </ul>
@@ -273,41 +327,40 @@
     </header>
 
     <!-- Projects Section -->
-    <section id="articles">
-        <div class="container articles">
+    <section class="certificates">
+        <div class="container">
+            <div class="certificate-list">
             <div>
-            <h2 style="text-align: center;" >My Published Articles</h2>
+            <h2 style="text-align: center;" >My Certificates</h2>
         </div>
-            <div class="article-card">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*-MKLEtyrPeyqH4gESl1ueA.png" alt="Article One Image">
-                <h3>From Missing to Meaning: Strategies for Effectively Handling Missing Data</h3>
-                <p>
-                    This article discusses strategies for handling missing values in data, focusing on both univariate and multivariate approaches with hands-on examples in Python.</p>
-                <p><a href="https://medium.com/python-in-plain-english/from-missing-to-meaning-strategies-for-effectively-handling-missing-data-220b33c8f511" target="_blank">Read More</a></p>
+            <div class="certificate">
+                <img src="images\UC-e800a629-9f0d-4c4a-8339-859dbb497768.jpg" alt="Machine Learning Certificate">
+                <h3>Deep Learning Masterclass with Tensorflow</h3>
+                <p>Issued by: Udemy</p>
+                    <p>Date: March 2024</p>
+                    <p><a href="https://www.udemy.com/certificate/UC-e800a629-9f0d-4c4a-8339-859dbb497768/" target="_blank">View Certificate</a></p>
             </div>
-            <div class="article-card">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ltpYOXmcdaJCYHaNKPdw6g.png" alt="Article Two Image">
-                <h3>IPL Win Predictor: Easy Streamlit Development and Deployment Guide</h3>
-                <p>In this article, I demonstrate the development and deployment of a website for my project, IPL Win Predictor, using Streamlit. This article can serve as a 101 guide to help you get started with development using Streamlit. </p>
-                <p><a href="https://medium.com/python-in-plain-english/ipl-win-predictor-easy-streamlit-development-and-deployment-guide-bce15bce99b1" target="_blank">Read More</a></p>
+            <div class="certificate">
+                <img src="images\UC-45bd925e-86a7-4ebc-91d8-5c8c1b16020c.jpg" alt="Deep Learning Certificate">
+                    <h3>MLOPs Bootcamp : AI Operations For Success</h3>
+                    <p>Issued by: Udemy</p>
+                    <p>Date: June 2024</p>
+                    <p><a href="https://www.udemy.com/certificate/UC-45bd925e-86a7-4ebc-91d8-5c8c1b16020c/" target="_blank">View Certificate</a></p>
             </div>
-            <div class="article-card">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*b0ZVIqi5MDjEeIyx3ycxYw.jpeg" alt="Article Three Image">
-                <h3>IPL Win Predictor: Analyzing Winning Probabilities</h3>
-                <p>Here, I explain my project, IPL Win Probability Predictor, which calculates the winning probability for both teams in a given scenario using Logistic Regression.</p>
-                <p><a href="https://medium.com/@username/article-three" target="_blank">Read More</a></p>
+            <div class="certificate">
+                <img src="images\1698012396814.jpg" alt="Natural Language Processing Certificate">
+                <h3>Python Programming Intermidiate Training</h3>
+                <p>Issued by: Udemy</p>
+                <p>Date: October 2023</p>
+                <p><a href="https://www.udemy.com/certificate/UC-302ff557-2612-4ee9-98b8-0c1e4f41838e/" target="_blank">View Certificate</a></p>
             </div>
-            <div class="article-card">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*_DnCTffkryYBFxZHkos2Ww.jpeg" alt="Article Four Image">
-                <h3>Understanding Feature Scaling in Machine Learning: Techniques, Implementation, and Advantages</h3>
-                <p>This article focuses on the important data preprocessing step that is feature scaling. It includes various types of scaling, such as standardization and normalization, with hands-on Python examples.</p>
-                <p><a href="https://medium.com/python-in-plain-english/understanding-feature-scaling-in-machine-learning-techniques-implementation-and-advantages-fd9065a349aa" target="_blank">Read More</a></p>
+            <div class="certificate">
+                <img src="images\1698011772889.jpg" alt="MLOps Certificate">
+                <h3>Machine Learning Deep Learning In Python & R</h3>
+                <p>Issued by: Udemy</p>
+                <p>Date: April 2021</p>
+                <p><a href="https://www.udemy.com/certificate/UC-7a726d68-bc15-4510-9035-70df04fc1582/" target="_blank">View Certificate</a></p>
             </div>
-            <div class="article-card">
-                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*66xwQPBd_elRigZi-Uk5-w.jpeg" alt="Article Five Image">
-                <h3>Mastering Machine Learning: Types, Tools, and Triumphs</h3>
-                <p>This was my first article on Medium, published in "Python in Plain English". In this article, I provide a basic introduction to machine learning, explain its types, tools, and applications, and offer guidance on how to become a proficient ML developer.</p>
-                <p><a href="https://medium.com/python-in-plain-english/mastering-machine-learning-types-tools-and-triumphs-119ee7c12ad2" target="_blank">Read More</a></p>
             </div>
         </div>
     </section>
